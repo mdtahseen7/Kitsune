@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="w-full bg-base-300 shadow-xl p-5 flex flex-col items-center space-y-5">
       <Image src="/icon.png" alt="logo" width="100" height="100" />
       <div className="flex space-x-5 items-center">
-        <a href="https://github.com/mdtahseeen7/Kitsune" target="_blank">
+        <a href="https://github.com/mdtahseen7/Kitsune" target="_blank">
           <GitHubLogoIcon width="25" height="25" />
         </a>
         <a href="" target="_blank">
