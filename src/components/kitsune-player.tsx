@@ -5,7 +5,7 @@ import ArtPlayer from "./art-player";
 import Hls from "hls.js";
 import { IEpisodeSource } from "@/types/episodes";
 import loadingImage from "@/assets/genkai.gif";
-import artplayerPluginHlsControl from "artplayer-plugin-hls-control";
+// import artplayerPluginHlsControl from "artplayer-plugin-hls-control";
 import artplayerPluginAmbilight from "artplayer-plugin-ambilight";
 import { env } from "next-runtime-env";
 
@@ -68,32 +68,32 @@ const KitsunePlayer = ({
         },
       },
       plugins: [
-        artplayerPluginHlsControl({
-          quality: {
-            // Show qualitys in control
-            control: true,
-            // Show qualitys in setting
-            setting: true,
-            // Get the quality name from level
-            //eslint-disable-next-line
-            getName: (level: any) => level.height + "P",
-            // I18n
-            title: "Quality",
-            auto: "Auto",
-          },
-          audio: {
-            // Show audios in control
-            control: true,
-            // Show audios in setting
-            setting: true,
-            // Get the audio name from track
-            //eslint-disable-next-line
-            getName: (track: any) => track.name,
-            // I18n
-            title: "Audio",
-            auto: "Auto",
-          },
-        }),
+        // artplayerPluginHlsControl({
+        //   quality: {
+        //     // Show qualitys in control
+        //     control: true,
+        //     // Show qualitys in setting
+        //     setting: true,
+        //     // Get the quality name from level
+        //     //eslint-disable-next-line
+        //     getName: (level: any) => level.height + "P",
+        //     // I18n
+        //     title: "Quality",
+        //     auto: "Auto",
+        //   },
+        //   audio: {
+        //     // Show audios in control
+        //     control: true,
+        //     // Show audios in setting
+        //     setting: true,
+        //     // Get the audio name from track
+        //     //eslint-disable-next-line
+        //     getName: (track: any) => track.name,
+        //     // I18n
+        //     title: "Audio",
+        //     auto: "Auto",
+        //   },
+        // }),
         artplayerPluginAmbilight({
           blur: "30px",
           opacity: 1,
